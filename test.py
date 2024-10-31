@@ -99,6 +99,7 @@ urls = [
 
 dynamic_web_scraper = WebScraper()
 
+# works with chrome driver.
 dynamic_web_scraper.scrape_dynamic_content()
 
 
