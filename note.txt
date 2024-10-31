@@ -1,0 +1,48 @@
+Clarifications on the web scraping task
+Following some recurring questions about the task, here is a collective answer from the instructors' side:
+
+1. The submission folder, task4_your_andrewid.zip will contain the .py files for exercise 1-4, and a folder containing your project for exercise 5 for easy  identification, as well as your report.
+
+2. You are advised to write a test.py or main.py that will run your submission. However, if you have tested your implementation within the different files, there is no need. If your submission requires special instructions to run it, include a READMe file alluding to this.
+
+3. Your report should include your names and Andrew IDs.
+
+Best of luck,
+
+TAs
+
+
+Hi TAs,
+
+Please I'd like to clarify exercise 4.3 which extends the WebScraper class: 
+
+For the scraping of the webpages for keywords, are there specific keywords we are to scrape?
+When searching for the keyword, are there specific keywords we should use? 
+Finally, for the submission, the generated text files are unique based on the scraping of the dynamic urls, is it fine if we just upload the first iteration (when we run the program once, the first set of files it generates).
+
+Thank you
+
+
+Clarification on Analytics Exercise 4
+
+1. Keyword Choice for Scraping:
+
+The assignment does not specify particular keywords, so you have the flexibility to choose. Select keywords that are contextually relevant to the type of site you're scraping. For example:
+If you chose Wikipedia, keywords like "history," "overview," or specific terms related to your target article would make sense.
+Just chose keywords that would appear frequently on your selected web pages to ensure the scraping produces meaningful data.
+
+2. Implementing the Keyword Search:
+
+In your WebScraper class, you should write a method that takes a keyword as an argument and searches for this keyword within the scraped content. This way, the function remains flexible, allowing you to test it with different keywords.
+When you find occurrences of the keyword, log them, count the number of appearances, and save these results (e.g., as a frequency count in the output file).
+
+3. Submission of Generated Files:
+
+For submission, you only need to upload the initial set of generated text files from a single run of your program. This means that if you run the program once and it generates a set of files (like keyword occurrences or counts), these can be the files you submit.
+Ensure that your output demonstrates the correct functionality of the keyword search, as consistency is more important than multiple iterations for this task.
+
+
+Following up to this, does for Exercise 4.1, do we just scrape the dynamic page without any search query parameters attached?
+
+You can start by loading the dynamic page with Selenium. If the content appears automatically, just wait briefly for it to load and then scrape. But, if it needs a search query or button click, use Selenium to interact with elements (like entering text in a search box with send_keys()). This covers both cases for dynamic pages.
+ 0

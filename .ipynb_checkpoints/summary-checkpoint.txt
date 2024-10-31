@@ -1,1 +1,0 @@
-Total number of paragraphs analyzed: 53Positive: 1Negative: 0Neutral: 21The average polarity: 0.023920811892510004The average subjectivity: 0.09890794739851343
