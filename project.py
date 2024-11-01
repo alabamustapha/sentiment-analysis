@@ -1,4 +1,7 @@
-from sentiment import SentimentAnalyzer, TextProcessor, WebScraper, Visualizer, Filemanager
+from sentiment_analyzer import SentimentAnalyzer
+from file_manager import Filemanager
+from text_processor import TextProcessor
+from web_scraper import WebScraper
 import pandas as pd
 
 # list of african countries 

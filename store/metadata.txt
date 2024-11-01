@@ -5,12 +5,12 @@ Charset
 
 Name
 1. ResourceLoaderDynamicStyles: 
-2. generator: MediaWiki 1.43.0-wmf.28
+2. generator: MediaWiki 1.44.0-wmf.1
 3. referrer: origin
 4. referrer: origin-when-cross-origin
 5. robots: max-image-preview:standard
 6. format-detection: telephone=no
-7. viewport: width=1120,initial-scale=1.0144787644787645
+7. viewport: width=1120,initial-scale=1.0172228202368139
 
 Property
 1. og:image: https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/1200px-Africa_%28orthographic_projection%29.svg.png
