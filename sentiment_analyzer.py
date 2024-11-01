@@ -6,21 +6,24 @@ class SentimentAnalyzer:
         
         
         def analyze_sentiment(self, file_name='extracted_content.txt'):
-            
+            """Analyze sentiment of paragraphs in a file.
+            """
             try:
 
                 file = Filemanager(file_name)
                 
                 paragraphs = file.read_file(lines=True)
                 
-                paragraphs = [p.strip() for p in paragraphs if p.strip() != '']
-
+                paragraphs = [p.strip() for p in paragraphs if p.strip() != '']  # Remove empty lines and strip whitespace
+                
+                # Analyze sentiment for each paragraph
                 for i, paragraph in enumerate(paragraphs):
 
                     blob = TextBlob(paragraph)
                     polarity = blob.sentiment.polarity
                     subjectivity = blob.sentiment.subjectivity
-
+                    
+                    # Print results for each paragraph
                     print(f"Paragraph {i+1}: {paragraph}")
                     print(f"Sentiment Polarity: {polarity}")
                     print(f"Sentiment Subjectivity: {subjectivity}")
@@ -31,7 +34,8 @@ class SentimentAnalyzer:
 
         
         def count_sentiments(self, paragraphs = []):
-          
+            """Count positive, negative, and neutral sentiments in paragraphs.
+            """
             sentiment_counts = {
                 'positive': 0,
                 'negative': 0,
@@ -39,6 +43,7 @@ class SentimentAnalyzer:
             }
 
             try:
+                # Classify each paragraph's sentiment
                 for paragraph in paragraphs:
                     blob = TextBlob(paragraph)
                     if blob.sentiment.polarity > 0:
@@ -47,7 +52,7 @@ class SentimentAnalyzer:
                         sentiment_counts['negative'] += 1
                     else:
                         sentiment_counts['neutral'] += 1
-                
+                # Print sentiment counts
                 print("Sentiment Counts:")
                 print(f"Positive: {sentiment_counts['positive']}")
                 print(f"Negative: {sentiment_counts['negative']}")
@@ -61,7 +66,9 @@ class SentimentAnalyzer:
 
         
         def summarize_sentiment(self, paragraphs,file_name = "sentiment_summary.txt"):
-
+            """
+                Summarize sentiment analysis results and write to a file.
+            """
             file = Filemanager(file_name)
 
             file.write_file("Sentiment Summary\n\n")
@@ -75,7 +82,7 @@ class SentimentAnalyzer:
             file.write_file(f"Negative: {sentiment_counter['negative']}\n\n", mode='a')
             file.write_file(f"Neutral: {sentiment_counter['neutral']}\n\n", mode='a')
 
-            
+            # Calculate average polarity and subjectivity
             blobs = [TextBlob(paragraph).sentiment for paragraph in paragraphs]
 
             polarities = [blob.polarity for blob in blobs]
@@ -88,11 +95,14 @@ class SentimentAnalyzer:
                 avg_polarity = 0
                 avg_subjectivity = 0
             
-            
+            # Write average polarity and subjectivity
             file.write_file(f"The average polarity: {avg_polarity:.3f}\n\n", mode='a')
             file.write_file(f"The average subjectivity: {avg_subjectivity:.3f}", mode='a')
 
         def sentiment_analysis(self, content):
+            """
+            Perform sentiment analysis on a single piece of content.
+            """
             blob = TextBlob(content)
 
             return {
