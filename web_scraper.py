@@ -17,6 +17,9 @@ nltk.download('stopwords')
 # 
 class WebScraper:
     def __init__(self, url=None):
+        """
+        Initialize the WebScraper with an optional URL.
+        """
         self.__url = url
 
     @property
@@ -28,7 +31,12 @@ class WebScraper:
         self.__url = url
     
     def download_html(self, file_name='webpage.html'):
+        """
+        Download the HTML content of the specified URL and save it to a file.
 
+        Args:
+            file_name (str): The name of the file to save the HTML content to.
+        """
         file = Filemanager(file_name)
 
         try:
@@ -50,7 +58,15 @@ class WebScraper:
             print(e)
 
     def extract_content(self, file_name='webpage.html'):
+        """
+        Extract the title and paragraphs from an HTML file.
 
+        Args:
+            file_name (str): The name of the file to extract content from.
+
+        Returns:
+            tuple: A tuple containing the title and a list of paragraphs.
+        """
         paragraphs = []
         title = None
 
@@ -82,7 +98,13 @@ class WebScraper:
     
 
     def save_text(self, file_name='extracted_content.txt', from_file='webpage.html'):
-        
+        """
+        Save extracted text content to a file.
+
+        Args:
+            file_name (str): The name of the output text file.
+            from_file (str): The name of the HTML file to extract text from.
+        """
         all_p = ""
 
         try:
@@ -110,7 +132,13 @@ class WebScraper:
             print(e)
 
     def scrape_multiple_pages(self, urls, item_name='article'):
+        """
+        Scrape multiple web pages and save their contents.
 
+        Args:
+            urls (list): List of URLs to scrape.
+            item_name (str): Base name for saved files.
+        """
         for i, url in enumerate(urls):
             page_html = f"{item_name}{i+1}.html"
             file_name = f"{item_name}{i+1}.txt"
@@ -131,7 +159,18 @@ class WebScraper:
 
     def scrape_dynamic_content(self, url="https://www.wikipedia.org/", search_query="Africa", input_el_id="searchInput", file_name="dynamic_content.html"):
         
-        
+        """
+        Scrape dynamic web content using Selenium.
+
+        Args:
+            url (str): The URL of the website.
+            search_query (str): The search query to input.
+            input_el_id (str): The ID of the search input element.
+            file_name (str): The name of the output HTML file.
+
+        Returns:
+             str: The name of the saved HTML file.
+        """
         try:
             # open the browser
             driver = webdriver.Chrome()
@@ -174,7 +213,13 @@ class WebScraper:
     
 
     def extract_metadata(self, file_name='dynamic_content.html', output_file='metadata.txt'):
+        """
+         Extract metadata from an HTML file and save it.
 
+         Args:
+              file_name (str): The name of the HTML file.
+              output_file (str): The name of the output text file for metadata.
+         """
         meta_data = {}
 
         output_file = Filemanager(output_file)
@@ -221,7 +266,16 @@ class WebScraper:
 
 
     def keyword_search(self, keyword="the", file_name='webpage.html'):
+        """
+         Search for a keyword in an HTML document.
 
+         Args:
+              keyword (str): The keyword to search for.
+              file_name (str): The name of the HTML document.
+
+         Returns:
+              int: The count of keyword occurrences.
+         """
         keyword_count = 0
 
         try:
