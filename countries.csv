@@ -1,0 +1,54 @@
+Country,Number of Paragraphs,Frequent Words,Frequent Word Count,Word Count,Polarity,Subjectivity,war,poverty,corruption,insecurity,crime,art,tourism
+Angola,139,"angola,portuguese,angolan,luanda,government,mpla,national,also,oil,country","116,53,46,27,25,24,24,24,22,21",10047,0.054,0.355,58,3,11,0,3,141,3
+Benin,86,"benin,country,dahomey,african,french,west,government,benins,national,research","85,22,20,20,19,19,18,15,14,14",5513,0.048,0.298,12,4,2,0,2,103,4
+Botswana,84,"botswana,africa,country,government,botswanas,south,people,african,one,national","140,37,32,23,22,21,21,21,18,18",7173,0.065,0.350,15,3,4,0,0,92,12
+Burkina Faso,162,"burkina,faso,country,french,national,government,president,food,ouagadougou,also","136,105,46,42,39,36,35,32,30,30",10998,0.062,0.333,19,3,3,11,5,142,2
+Burundi,113,"burundi,hutu,burundis,government,tutsi,burundian,president,national,african,country","101,46,40,39,34,29,26,24,21,20",7723,0.053,0.313,44,3,2,0,6,137,2
+Cameroon,106,"cameroon,national,cameroons,government,republic,region,since,people,southern,north","116,28,27,24,21,21,19,18,18,17",7195,0.058,0.331,26,3,16,1,0,101,2
+Cape Verde,140,"cape,verde,islands,verdean,portuguese,century,country,one,island,first","184,119,47,38,35,28,24,23,22,21",7469,0.107,0.370,14,2,1,0,5,102,10
+Central African Republic,92,"african,central,republic,country,government,french,president,countrys,also,bangui","83,79,64,44,33,30,21,18,18,15",6222,0.024,0.278,26,1,1,0,2,91,1
+Chad,82,"chad,chadian,chads,national,president,country,dby,french,population,south","89,30,29,26,22,21,19,18,17,15",6298,0.062,0.350,37,14,6,0,5,98,1
+Comoros,82,"comoros,islands,french,mayotte,president,france,population,union,also,african","82,61,30,27,27,25,20,18,18,16",6135,0.063,0.315,8,9,1,0,1,82,3
+Congo (Brazzaville),54,"congo,republic,sassou,government,french,country,first,president,became,brazzaville","59,31,20,19,14,13,13,12,12,12",3456,0.049,0.282,16,2,1,0,0,81,1
+Congo (Kinshasa),148,"congo,drc,country,republic,congolese,democratic,also,national,river,mobutu","152,65,65,61,49,40,34,33,31,31",11990,0.057,0.367,75,3,18,0,8,144,1
+Côte d'Ivoire,88,"coast,ivory,french,african,west,country,africa,population,government,ivorian","85,84,81,38,35,32,26,23,23,21",7736,0.063,0.326,44,6,3,0,4,87,2
+Djibouti,124,"djibouti,french,also,somali,government,ethiopia,country,djiboutian,djiboutis,adal","108,53,51,30,28,26,25,25,22,21",10522,0.068,0.322,30,0,1,0,0,150,8
+Egypt,168,"egypt,egyptian,egypts,government,new,country,world,arab,years,egyptians","193,115,46,43,37,33,33,32,31,31",13497,0.065,0.348,62,1,7,0,1,166,22
+Equatorial Guinea,90,"equatorial,guinea,country,spanish,also,bioko,spain,obiang,fernando,island","84,77,37,32,27,25,23,23,20,20",7448,0.050,0.318,16,1,5,0,1,96,3
+Eritrea,149,"eritrea,eritrean,first,italian,government,country,ethiopian,asmara,years,national","171,82,35,34,29,28,28,27,26,26",10429,0.058,0.313,67,0,0,0,2,149,14
+Eswatini (formerly Swaziland),1,"page,eswatini,formerly,swaziland,exist,create,draft,submit,review,request","1,1,1,1,1,1,1,1,1,1",40,0.000,0.000,2,0,0,0,0,2,0
+Ethiopia,157,"ethiopia,ethiopian,country,years,also,first,one,government,federal,africa","170,96,38,34,34,29,27,27,26,26",13238,0.072,0.350,83,9,3,0,5,166,1
+Gabon,81,"gabon,national,bongo,president,government,gabonese,political,population,opposition,french","57,30,29,29,23,20,19,18,16,15",5053,0.051,0.313,7,1,2,0,0,89,2
+Gambia,104,"gambia,jammeh,also,president,national,british,country,gambian,river,trade","125,29,29,26,24,24,23,22,19,18",6913,0.062,0.314,32,2,1,0,0,133,10
+Ghana,88,"ghana,african,ghanaian,country,africa,gold,president,government,world,coast","153,31,31,28,28,27,21,20,20,19",7727,0.068,0.335,16,5,9,0,5,112,10
+Guinea,82,"guinea,president,guinean,country,guineas,african,west,french,conakry,population","105,25,21,19,19,18,17,16,15,15",5895,0.038,0.290,6,5,4,0,0,105,2
+Guinea-Bissau,99,"guineabissau,portuguese,country,president,population,african,first,trade,education,century","48,46,25,23,20,20,18,18,15,14",5456,0.087,0.330,27,2,0,1,0,80,1
+Kenya,176,"kenya,kenyas,kenyan,national,world,africa,president,east,also,country","190,46,39,34,31,28,28,27,27,26",12255,0.081,0.356,28,9,21,1,3,138,14
+Lesotho,66,"lesotho,south,african,government,country,basotho,africa,moshoeshoe,population,national","94,30,29,23,19,19,18,18,17,15",5635,0.055,0.284,16,1,1,2,3,67,1
+Liberia,116,"liberia,liberian,president,united,government,war,liberias,african,civil,africa","100,33,27,26,26,24,24,22,21,20",7634,0.076,0.348,66,1,17,0,8,99,1
+Libya,130,"libya,libyan,national,government,arab,tripoli,libyas,war,population,also","165,72,45,45,34,34,33,33,32,32",12079,0.071,0.334,86,1,0,0,1,127,6
+Madagascar,118,"madagascar,malagasy,island,french,percent,population,national,many,one,species","145,65,61,43,36,31,30,28,26,26",12137,0.049,0.341,28,6,8,2,4,124,13
+Malawi,80,"malawi,country,president,africa,government,malawian,population,malawis,african,lake","136,37,27,23,23,22,20,20,19,19",6864,0.050,0.322,10,2,7,0,1,117,2
+Mali,108,"mali,malis,government,malian,women,french,west,population,military,president","131,29,28,26,24,21,20,18,18,17",7627,0.035,0.350,16,4,0,1,0,112,1
+Mauritania,100,"mauritania,ould,mauritanian,sahara,french,president,arab,military,western,slavery","81,31,22,20,19,19,18,18,17,17",5816,0.054,0.329,18,2,5,0,2,111,1
+Mauritius,127,"mauritius,island,islands,french,mauritian,population,de,government,france,british","178,86,40,40,36,35,33,33,30,30",11668,0.071,0.325,22,1,1,0,4,127,11
+Morocco,163,"morocco,moroccan,country,also,moroccos,first,spanish,western,sahara,government","211,91,39,34,33,33,31,30,30,30",12125,0.085,0.347,30,0,0,0,3,172,16
+Mozambique,93,"mozambique,portuguese,country,south,government,africa,african,mozambiques,population,areas","99,62,32,32,28,22,21,19,17,17",7939,0.084,0.360,36,2,13,0,1,121,11
+Namibia,130,"namibia,south,africa,african,country,namibian,german,population,world,government","150,77,59,38,36,36,30,30,27,27",9389,0.068,0.337,38,8,3,0,0,146,30
+Niger,111,"niger,military,french,national,hausa,government,country,west,empire,president","116,39,31,30,27,26,25,25,24,24",9477,0.041,0.305,20,4,4,0,0,146,1
+Nigeria,153,"nigeria,nigerian,country,government,niger,nigerias,africa,largest,also,oil","190,77,41,38,36,36,33,33,33,32",13637,0.059,0.361,45,13,10,1,8,159,7
+Rwanda,71,"rwanda,country,population,government,rwandan,national,countrys,african,tutsi,rwandas","93,48,36,34,30,28,27,25,25,24",8923,0.068,0.333,27,7,4,0,1,120,12
+São Tomé and Principe,126,"tom,prncipe,century,portuguese,portugal,islands,government,de,island,economy","141,97,36,31,28,23,21,19,17,17",6138,0.081,0.359,18,2,2,0,0,78,8
+Senegal,116,"senegal,senegalese,african,senegals,french,president,also,serer,country,west","134,33,31,27,26,26,23,23,22,22",6948,0.089,0.340,16,2,9,1,0,123,5
+Seychelles,101,"seychelles,islands,island,le,african,seychellois,french,national,ilot,president","113,41,32,30,21,19,18,18,16,15",5747,0.085,0.329,7,1,1,0,0,92,21
+Sierra Leone,221,"sierra,leone,country,freetown,government,president,stevens,british,population,many","383,313,81,75,71,58,50,48,47,43",17904,0.089,0.363,83,6,9,0,4,187,8
+Somalia,183,"somali,somalia,also,government,national,federal,country,somaliland,somalias,according","161,156,64,61,49,45,42,41,32,29",14446,0.079,0.342,90,2,1,0,0,152,12
+South Africa,134,"south,africa,african,country,cape,world,national,largest,people,first","264,181,97,51,48,40,36,35,34,33",13094,0.097,0.358,83,10,12,0,16,237,16
+South Sudan,132,"south,sudan,sudanese,government,southern,2011,sudans,country,also,african","218,211,58,43,39,35,34,30,27,26",9683,0.050,0.318,62,1,1,0,1,130,2
+Sudan,151,"sudan,sudanese,south,egypt,government,war,sudans,also,people,country","199,80,49,48,45,37,32,32,30,29",12403,0.051,0.311,97,2,5,0,10,173,0
+Tanzania,156,"tanzania,page,per,african,country,national,zanzibar,tanzanias,cent,east","156,59,56,47,41,41,41,32,31,28",11755,0.075,0.347,32,15,1,0,0,182,11
+Togo,69,"togo,country,gnassingb,president,population,african,togolese,government,lom,opposition","60,22,22,22,20,16,16,15,13,13",4995,0.037,0.287,10,1,3,0,0,75,0
+Tunisia,138,"tunisia,tunisian,french,tunis,arab,country,also,africa,national,carthage","137,62,35,33,30,26,24,23,22,21",9841,0.083,0.320,31,0,9,0,0,188,9
+Uganda,148,"uganda,buganda,national,percent,government,ugandan,million,obote,country,world","165,44,40,39,37,37,36,33,32,29",10744,0.057,0.355,32,15,17,0,4,136,12
+Zambia,152,"zambia,zambian,people,country,africa,zambias,southern,one,government,african","149,38,32,31,27,27,26,26,25,25",10094,0.075,0.351,21,8,5,0,0,121,14
+Zimbabwe,137,"zimbabwe,government,zimbabwean,africa,mugabe,shona,first,national,african,rhodesia","188,64,44,36,36,34,31,30,29,28",12588,0.067,0.331,70,3,4,3,2,153,19
