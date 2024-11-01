@@ -21,6 +21,7 @@ for country in africa_countries[:5]:
     title, paragraphs = scraper.extract_content(file_name=country_file_name)
     paragraphs = text_processor.clean_text(paragraphs)
     sentiment_analyzer.summarize_sentiment(paragraphs, country_summary_txt)
+
 # for each country get sumary of sentiment and put in a dictionary
 
 
