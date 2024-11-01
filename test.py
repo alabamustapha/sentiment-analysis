@@ -21,8 +21,6 @@ urls = [
 
 
 
-
-
 web_scrapper = WebScraper(webpage_url)
 web_scrapper.download_html()
 

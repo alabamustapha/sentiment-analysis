@@ -14,7 +14,6 @@ from nltk.corpus import stopwords
 nltk.download('stopwords')  
 
 
-# 
 class WebScraper:
     def __init__(self, url=None):
         self.__url = url

@@ -1,6 +1,0 @@
-Country,Number of Paragraphs,Frequent Words,Frequent Word Count,Word Count,Polarity,Subjectivity,war,poverty,corruption,insecurity,crime,art,tourism
-Angola,139,"angola,portuguese,angolan,luanda,government,mpla,national,also,oil,country","116,53,46,27,25,24,24,24,22,21",10047,0.054,0.355,58,3,11,0,3,141,3
-Benin,86,"benin,country,dahomey,african,french,west,government,benins,national,research","85,22,20,20,19,19,18,15,14,14",5513,0.048,0.298,12,4,2,0,2,103,4
-Botswana,84,"botswana,africa,country,government,botswanas,south,people,african,one,national","140,37,32,23,22,21,21,21,18,18",7173,0.065,0.350,15,3,4,0,0,92,12
-Burkina Faso,162,"burkina,faso,country,french,national,government,president,food,ouagadougou,also","136,105,46,42,39,36,35,32,30,30",10998,0.062,0.333,19,3,3,11,5,142,2
-Burundi,113,"burundi,hutu,burundis,government,tutsi,burundian,president,national,african,country","101,46,40,39,34,29,26,24,21,20",7723,0.053,0.313,44,3,2,0,6,137,2
