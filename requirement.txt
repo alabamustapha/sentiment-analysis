@@ -1,0 +1,12 @@
+requests
+pandas
+numpy
+matplotlib
+seaborn
+bs4
+re
+textblob 
+nltk
+seaborn
+wordcloud
+selenium
