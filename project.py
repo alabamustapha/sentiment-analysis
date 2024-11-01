@@ -9,11 +9,18 @@ file = Filemanager()
 text_processor = TextProcessor()
 sentiment_analyzer = SentimentAnalyzer()
 
-# make a directory to store the files
+
 
 for country in africa_countries[:5]:
-    scraper.scrape_dynamic_content(url="https://www.wikipedia.org/", search_query=f"{country}", input_el_id="searchInput", file_name=f"countries/{country}.html")
-    sentiment_analyzer.summarize_sentiment(file_name=f"countries/{country}.html", output_file=f"countries/{country}_summary.txt")
+    country_file_name = f"countries/{country}.html"
+    country_summary_txt = f"countries/{country}_summary.txt"
+    
+
+    scraper.scrape_dynamic_content(url="https://www.wikipedia.org/", search_query=f"{country}", input_el_id="searchInput", file_name=country_file_name)
+    
+    title, paragraphs = scraper.extract_content(file_name=country_file_name)
+    paragraphs = text_processor.clean_text(paragraphs)
+    sentiment_analyzer.summarize_sentiment(paragraphs, country_summary_txt)
 # for each country get sumary of sentiment and put in a dictionary
 
 
