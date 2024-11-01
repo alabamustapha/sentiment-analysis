@@ -106,9 +106,9 @@ urls = [
 # dynamic_web_scraper.extract_metadata()
 
 
-# test keyword search
-webscraper = WebScraper()
-webscraper.keyword_search('the')
+# # test keyword search
+# webscraper = WebScraper()
+# webscraper.keyword_search('the')
 
 
 
