@@ -1,0 +1,13 @@
+Sentiment Summary
+
+Total number of paragraphs analyzed: 66
+
+Positive: 33
+
+Negative: 19
+
+Neutral: 14
+
+The average polarity: 0.033
+
+The average subjectivity: 0.244
