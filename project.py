@@ -34,8 +34,5 @@ print(country_sentiment_summary)
 
 # plot polarity against subjectivity for each country
 
-# get frequency of words in the summary of each country
 
-# get the most common words accross all countries
-
-# search for key words - war, poverty, corruption, insecurity, crime
+# search for key words - war, poverty, corruption, insecurity, crime, tourism, art
