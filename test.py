@@ -97,10 +97,18 @@ urls = [
 # visualizer.make_word_cloud(content)
 
 
-dynamic_web_scraper = WebScraper()
+# dynamic_web_scraper = WebScraper()
 
 # works with chrome driver.
-dynamic_web_scraper.scrape_dynamic_content()
+# dynamic_web_scraper.scrape_dynamic_content()
+
+# test meta data extraction
+# dynamic_web_scraper.extract_metadata()
+
+
+# test keyword search
+webscraper = WebScraper()
+webscraper.keyword_search('the')
 
 
 

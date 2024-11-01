@@ -1,0 +1,28 @@
+Page Metadata
+
+Charset
+1. UTF-8: 
+
+Name
+1. ResourceLoaderDynamicStyles: 
+2. generator: MediaWiki 1.43.0-wmf.28
+3. referrer: origin
+4. referrer: origin-when-cross-origin
+5. robots: max-image-preview:standard
+6. format-detection: telephone=no
+7. viewport: width=1120,initial-scale=1.0144787644787645
+
+Property
+1. og:image: https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/1200px-Africa_%28orthographic_projection%29.svg.png
+2. og:image:width: 1200
+3. og:image:height: 1200
+4. og:image: https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/800px-Africa_%28orthographic_projection%29.svg.png
+5. og:image:width: 800
+6. og:image:height: 800
+7. og:image: https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/640px-Africa_%28orthographic_projection%29.svg.png
+8. og:image:width: 640
+9. og:image:height: 640
+10. og:title: Africa - Wikipedia
+11. og:type: website
+12. mw:PageProp/toc: 
+

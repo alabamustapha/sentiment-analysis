@@ -11,6 +11,8 @@ from wordcloud import WordCloud
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 from nltk.corpus import stopwords
@@ -134,27 +136,116 @@ class WebScraper:
 
     def scrape_dynamic_content(self, url="https://www.wikipedia.org/", search_query="Africa", input_el_id="searchInput", file_name="dynamic_content.html"):
         
-        driver = webdriver.Chrome()
-
-        driver.get(url)
-
-        search_box = driver.find_element(By.ID, input_el_id)
-        search_box.send_keys(search_query)
-        search_box.send_keys(Keys.RETURN)
-
-        # wait for the page to load
-        driver.implicitly_wait(10)
-
-        page_content = driver.page_source
-
-        output_file = Filemanager(file_name)
-        output_file.write_file(page_content)
         
+        try:
+            # open the browser
+            driver = webdriver.Chrome()
 
-        driver.quit()
+            # open the url
+            driver.get(url)
 
-        return file_name
+            # search for the search box and enter the search query
+            if search_query is not None:
+                try:
+                    # wait until all element loads
+                    element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, input_el_id)))
 
+                    search_box = driver.find_element(By.ID, input_el_id)
+                    search_box.send_keys(search_query)
+                    search_box.send_keys(Keys.RETURN)
+
+                    # wait for the page to load
+                    driver.implicitly_wait(10)
+                except Exception as e:
+                    print("Unable to perform search")
+                    print(e)
+
+            # get the page content
+            page_content = driver.page_source
+
+            # save the page content to a file
+            output_file = Filemanager(file_name)
+            output_file.write_file(page_content)
+            
+            # close the browser
+            driver.quit()
+
+            return file_name
+        
+        except Exception as e:
+            print("Unable to scrape {url} using search query: {search_query}")
+            print(e)
+    
+    
+
+    def extract_metadata(self, file_name='dynamic_content.html', output_file='metadata.txt'):
+
+        meta_data = {}
+
+        output_file = Filemanager(output_file)
+
+        try:
+            print(f"Extracting metadata from: {file_name}")
+            file = Filemanager(file_name)
+            page_content = file.read_file()
+
+            print(f"Parsing page content")  
+            page_soup = BeautifulSoup(page_content, 'html.parser')
+            
+            meta_tags = page_soup.find_all('meta')
+
+            
+
+            output_file.write_file("Page Metadata\n\n")
+
+            for tag in meta_tags:
+                tag_keys = tag.attrs.keys()
+                tag_keys = [key for key in tag_keys if key != 'content']
+                for key in tag_keys:
+                    if key not in meta_data:
+                        meta_data[key] = []
+                    meta_data[key].append((tag[key], tag.get('content')))
+
+                    
+            for key, values in meta_data.items():
+                
+                output_file.write_file(f"{key.capitalize()}\n", mode='a')
+                
+                for i, value in enumerate(values):
+                    tag_content =  value[1] if value[1] is not None else ""
+                    output_file.write_file(f"{i+1}. {value[0]}: {tag_content}\n", mode='a')
+                output_file.write_file("\n", mode='a')
+
+            print("Metadata extracted and saved successfully")
+                
+        except Exception as e:
+            print("Unable to extract metadata")
+            print(e)
+
+        return None
+
+
+    def keyword_search(self, keyword="the", file_name='webpage.html'):
+
+        keyword_count = 0
+
+        try:
+            print(f"Extracting content from: {file_name}")
+            file = Filemanager(file_name)
+            page_content = file.read_file()
+
+            text_analysis = TextProcessor()
+            clean_page_content = text_analysis.clean_text([page_content])[0]
+
+            keyword_count = clean_page_content.count(keyword.lower())
+
+            print(f"Keyword '{keyword}' count: {keyword_count}")
+
+        except Exception as e:
+            print("Unable to extract content")
+            print(e)
+        
+        return keyword_count
    
 
 class TextProcessor:
